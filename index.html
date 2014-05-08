@@ -3,11 +3,19 @@
 
 
 <head>
-<link rel="stylesheet" type="text/css" href="styles.css" media="screen">
+<link rel="stylesheet" type="text/css" href="styles.css" media="all">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="jqm/jquery.mobile-1.4.2.min.css">
 <script src="jquery-1.11.1.min.js"></script>
 <script src="jqm/jquery.mobile-1.4.2.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="ionic-beta3/css/ionic.min.css">
+<script src="ionic-beta3/js/ionic.bundle.min.js"></script>
+<script src="ionic-beta3/js/ionic.min.js"></script>
+<script src="ionic-beta3/js/ionic-angular.min.js"></script>
+
+
+
 </head>
 
 <body>
@@ -16,63 +24,124 @@
 <!-- MAIN -->
 <div data-role="page" data-theme="b" id="main">
 
-  <div data-role="header">
-    <h1>Jenazah Apps</h1>
+  <div  data-role="header">
+    <h1>UTAMA</h1>
   </div>
 
   <div data-role="main" class="ui-content">
 
-    <h1>KANDUNGAN</h1>
+    <h3>KANDUNGAN</h3>
 
 <ul>
-  <li><a href="#wajib" data-transition="pop" class="ui-btn">PERKARA-PERKARA YANG WAJIB</a></li>
+  <li><a href="#wajib" data-transition="pop" class="ui-btn">PERKARA WAJIB </a></li>
   <li><a href="#talkin" data-transition="pop" class="ui-btn">TALKIN</a></li>
 </ul>
   
   </div>
 
   <div data-role="footer">
-    <h1>JENAZAH</h1>
+    <h1>JenazahApps</h1>
   </div>
 </div> 
 
 <!-- wajib -->
 
-<div data-role="page" id="wajib">
+<div data-role="page" id="wajib" data-theme="b">
   
   <div data-role="header">
-    <h1>PERKARA-PERKARA YANG WAJIB DILAKSANAKAN</h1>
+    <h1>Perkara Wajib</h1>
   </div>
 
   <div data-role="main" class="ui-content">
 
 <article>
 
-<p>Bila seseorang Islam meninggal dunia, 
-maka fardhu kifayah atas orang hidup melaksanakan
-perkara-perkara berikut: -</p>
+<p></p>
 
-<ol>
-  <li>Memandikan.</li>
-  <li>Mengkapankan.</li>
-  <li>Menyembahyangkan</li>
-  <li>Mengkebumikan</li>
+<ol class="list">
+  <li><a href="#mandi"> <button class="button button-outline button-balanced"> Memandikan</button> </a></li>
+  <li><a href="#"> <button class="button button-outline button-balanced"> Mengkapankan </button> </a> </li>
+  <li><a href="#"> <button class="button button-outline button-balanced"> Menyembahyangkan </button> </a> </li>
+  <li><a href="#"> <button class="button button-outline button-balanced"> Mengkebumikan </button> </a> </li>
+
 </ol>
 
 <p>Keempat-empat perkara tersebut wajib
-dilaksanakan dengan sempurna dan segera ,
+dilaksanakan dengan sempurna dan segera,
 kecuali orang yang mati Syahid, maka hanya
 wajib dikapankan dan dikebumikan, dan haram
 dimandi dan disembahyangkan.</p>
+
 </article>
 
   
   </div>
 
   <div data-role="footer">
-    <h1><a href="#main">KANDUNGAN</a></h1>
+    <h1><a href="#main">MAIN</a></h1>
   </div>
 </div> 
+
+
+<!--Mandi-->
+
+<div data-role="page" id="mandi" data-theme="b">
+  <div data-role="header">
+    <h1>MANDI</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+<article>
+
+<p>
+Sekurang-kurang mandi mayat ialah dengan
+meratakan air ke seluruh tubuh badan mayat
+setelah dibersihkan najis yang ada pada
+badannya hingga kepada faraj (kemaluan
+perempuan) yang terbuka di waktu duduk
+mencangkung dan ke bawah kulub zakar
+(kemaluan lelaki) jika zakar itu boleh dibukakan
+Jika zakar itu tidak boleh dibukakan, dan air tidak
+sampai ke bawah kulub zakarnya, maka menurut
+pendapat Ulamak Mutakaddimin dari Mazhab
+Syafie memadailah dengan memandikannya
+sahaja dan sembahyangkan tanpa ditayammum
+kan.
+</p>
+
+<p>
+Tetapi menurut pendapat Syeikh Ibnu Hajar wajib
+menyampaikan air ke bawah kulub lelaki yang
+belum berkhatan, dan hendaklah dibuka dan
+dibasuh najis-najis yang ada di bawah kulubnya
+tadi. Sekiranya payah untuk membuka kulubnya,
+maka hendaklah ditayammumkan sebagai ganti
+membasuh di bawah kulubnya itu.
+</p>
+
+<script type="text/javascript">
+
+$.get('test.html')
+.success(function(data) {
+ $('div.content').html(data);
+});
+
+</script>
+
+  
+
+
+
+
+</article>
+</div>
+
+  <div data-role="footer">
+    <h1><a href="#main">MAIN</a></h1>
+  </div>
+</div> 
+
+
 
 
 <!-- Talkin -->
@@ -90,8 +159,6 @@ dimandi dan disembahyangkan.</p>
     <h1><a href="#main">KANDUNGAN</a></h1>
   </div>
 </div> 
-
-
 
 
 <!-- SP -->
